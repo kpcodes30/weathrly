@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: #192244;
+}
+main {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  width: 350px;
+  height: 250px;
+  gap: 1.1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background: rgba(40, 51, 110, 0.6);
+  border-radius: 16px;
+}
+.panel h1 {
+  font-size: 2rem;
+  color: white;
+  letter-spacing: 0.5px;
+}
+.panel input {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+.panel input:focus {
+  border: 2px solid #5c7cfa;
+}
+.panel button {
+  width: 50%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #3a4a9c;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.panel button:hover {
+  background-color: #5c7cfa;
+}
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+footer {
+  font-family: "Quicksand", "Montserrat", "Poppins", sans-serif;
+  background: #151a33;
+  color: #b3c7f7;
+  text-align: center;
+  padding: 1.2rem 0;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  border-top: 1px solid #28336e;
+  box-shadow: 0 -2px 8px rgba(25, 34, 68, 0.12);
+}
