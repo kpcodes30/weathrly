@@ -1,3 +1,23 @@
+@media (max-width: 460px) {
+  .panel {
+    width: 98vw;
+    max-width: 98vw;
+    min-width: 0;
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    min-height: 320px;
+    margin-top: 1.2rem;
+    box-sizing: border-box;
+  }
+  .panel h1 {
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+  }
+  .panel input,
+  .panel button {
+    font-size: 0.95rem;
+    padding: 0.7rem 0.5rem;
+  }
+}
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 
 :root {
