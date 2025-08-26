@@ -165,7 +165,7 @@ button.addEventListener("click", () => {
     fetchWeather(city);
   } else {
     resultDiv.innerHTML =
-      '<p style="color:#fff;text-align:center;">Please enter a location.</p>';
+      '<p style="color:#fff;text-align:center;">Please enter a city name.</p>';
   }
 });
 
