@@ -30,14 +30,14 @@ main {
   align-items: center;
   justify-content: flex-start;
   margin-top: 1rem;
-  width: 350px;
-  height: 250px;
+  width: 400px;
+  min-height: 350px;
   gap: 1.1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding: 2.5rem 2rem 2rem 2rem;
   background: rgba(40, 51, 110, 0.6);
-  border-radius: 16px;
+  border-radius: 18px;
+  transition: box-shadow 0.3s;
 }
 .panel h1 {
   font-size: 2rem;
