@@ -132,6 +132,11 @@ footer {
   letter-spacing: 0.5px;
   border-top: 1px solid #28336e;
   box-shadow: 0 -2px 8px rgba(25, 34, 68, 0.12);
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 }
 footer a.github-link {
   color: #b3c7f7;
