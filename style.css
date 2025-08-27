@@ -1,3 +1,15 @@
+/* Footer GitHub link, styled as a link but no underline */
+footer a.github-link {
+  color: #5c7cfa;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+footer a.github-link:hover {
+  color: #28336e;
+  text-decoration: underline;
+}
 @media (max-width: 460px) {
   .panel {
     width: 98vw;
@@ -120,4 +132,15 @@ footer {
   letter-spacing: 0.5px;
   border-top: 1px solid #28336e;
   box-shadow: 0 -2px 8px rgba(25, 34, 68, 0.12);
+}
+footer a.github-link {
+  color: #b3c7f7;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+footer a.github-link:hover {
+  color: #fff;
+  text-decoration: underline;
 }
