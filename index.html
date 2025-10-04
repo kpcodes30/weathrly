@@ -1,40 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="dist/output.css" />
-  </head>
-  <body class="bg-gray-200 flex justify-center items-center min-h-screen p-2 sm:p-4 lg:p-6">
-    <div class="container w-full max-w-sm sm:max-w-md lg:max-w-2xl mx-auto">
-      <main class="weather-card bg-gray-100 p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl lg:rounded-4xl shadow-lg w-full">
-        <section class="main-info p-2 flex flex-col items-start">
-          <header>
-              <button class="detect-location bg-orange-500 text-white font-semibold text-sm py-2 px-4 rounded-lg self-start mb-6 transition duration-200 ease-in-out hover:-translate-y-0.5 hover:shadow-lg hover:shadow-orange-500/30 active:translate-y-0 active:shadow-none">
-                Detect Location
-              </button>
-          <h2 class="location text-gray-800 font-bold text-2xl sm:text-3xl lg:text-4xl">Mumbai,India</h2>
-          <p class="day-time text-gray-500 text-sm sm:text-base">Monday 10:45 PM</p>
-          </header>
-                        <div class="weather-display flex flex-row items-baseline justify-center my-4 sm:my-6 gap-8 md:gap-10 lg:gap-12 relative">
-            <div class="temperature text-[100px] sm:text-[150px] lg:text-[200px] text-gray-900 font-bold leading-none relative">
-              <span class="temp-number">22</span><span class="degree text-orange-500 font-bold text-[45px] sm:text-[55px] lg:text-[70px] absolute top-4 md:top-6 lg:top-8">°</span>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atmosphere UI - Tailwind</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-zinc-100 font-sans text-zinc-800 flex items-center justify-center min-h-screen p-4">
+
+    <div class="w-full max-w-4xl">
+        <main class="bg-white rounded-3xl shadow-lg border border-zinc-200 grid grid-cols-1 md:grid-cols-[2fr_1.1fr] overflow-hidden animate-fadeInUp">
             
-              <div class="weather-icon w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24"><img src="https://img.icons8.com/?size=100&id=8LM7-CYX4BPD&format=png&color=000000" alt="" />
-              <span class="condition font-semibold translate-x-8 text-gray-800 text-base sm:text-lg lg:text-xl">Sunny</span></div>
-          </div>
-        </section>
-          <section class="additional-info">
-          <div class="humidity"></div>
-          <div class="wind-speed"></div>
-          <div class="AQI"></div>
-          <div class="important-info"></div>
-        </div>
-        </section>
-      </main>
-      <footer></footer>
+            <section class="p-6 sm:p-8 md:p-12 flex flex-col">
+                <header class="animate-fadeInUp [animation-delay:0.2s] [animation-fill-mode:backwards]">
+                    <button class="bg-orange-500 text-white font-semibold text-sm py-2 px-4 rounded-lg self-start mb-6 transition duration-200 ease-in-out hover:-translate-y-0.5 hover:shadow-lg hover:shadow-orange-500/30 active:translate-y-0 active:shadow-none">
+                        Detect Location
+                    </button>
+                    <h1 class="text-2xl sm:text-3xl font-semibold text-zinc-900">Ludhiana, Punjab</h1>
+                    <p class="text-base text-zinc-500 font-medium">Sunday, 12:28 AM</p>
+                </header>
+                
+                <div class="my-auto flex items-center gap-4 animate-fadeInUp [animation-delay:0.4s] [animation-fill-mode:backwards]">
+                    <div class="text-6xl sm:text-7xl lg:text-8xl xl:text-9xl font-bold text-zinc-900">28<span class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-semibold text-orange-500 align-super">°</span></div>
+                    <div class="text-center">
+                        <div class="text-4xl sm:text-5xl lg:text-6xl">🌤️</div>
+                        <div class="text-lg font-semibold text-zinc-900">Partly Cloudy</div>
+                    </div>
+                </div>
+            </section>
+            
+            <aside class="bg-zinc-50/75 border-l border-zinc-200 p-6 sm:p-8 md:p-12 flex flex-col justify-between">
+                <div class="grid grid-cols-2 gap-x-6 gap-y-8 animate-fadeInUp [animation-delay:0.6s] [animation-fill-mode:backwards]">
+                    <div class="flex flex-col gap-0.5">
+                        <span class="text-sm font-medium text-zinc-500">High / Low</span>
+                        <span class="text-lg font-semibold text-zinc-900">31° / 24°</span>
+                    </div>
+                    <div class="flex flex-col gap-0.5">
+                        <span class="text-sm font-medium text-zinc-500">Wind</span>
+                        <span class="text-lg font-semibold text-zinc-900">11 km/h</span>
+                    </div>
+                    <div class="flex flex-col gap-0.5">
+                        <span class="text-sm font-medium text-zinc-500">Humidity</span>
+                        <span class="text-lg font-semibold text-zinc-900">62%</span>
+                    </div>
+                    <div class="flex flex-col gap-0.5">
+                        <span class="text-sm font-medium text-zinc-500">Sunrise</span>
+                        <span class="text-lg font-semibold text-zinc-900">6:04 AM</span>
+                    </div>
+                </div>
+                
+                <div class="animate-fadeInUp [animation-delay:0.8s] [animation-fill-mode:backwards] mt-8">
+                    <h4 class="text-sm font-semibold text-zinc-500 uppercase tracking-wider mb-4">Hourly Forecast</h4>
+                    <div class="flex justify-between gap-4">
+                        <div class="flex-1 flex flex-col items-center gap-2 p-3 rounded-xl transition-colors duration-300 hover:bg-zinc-200/50">
+                            <span class="text-sm font-medium text-zinc-500 whitespace-nowrap">3 AM</span>
+                            <span class="text-2xl">🌙</span>
+                            <span class="text-lg font-semibold text-zinc-900">25°</span>
+                        </div>
+                        <div class="flex-1 flex flex-col items-center gap-2 p-3 rounded-xl transition-colors duration-300 hover:bg-zinc-200/50">
+                            <span class="text-sm font-medium text-zinc-500 whitespace-nowrap">6 AM</span>
+                            <span class="text-2xl">☀️</span>
+                            <span class="text-lg font-semibold text-zinc-900">24°</span>
+                        </div>
+                        <div class="flex-1 flex flex-col items-center gap-2 p-3 rounded-xl transition-colors duration-300 hover:bg-zinc-200/50">
+                            <span class="text-sm font-medium text-zinc-500 whitespace-nowrap">9 AM</span>
+                            <span class="icon text-2xl">⛅️</span>
+                            <span class="text-lg font-semibold text-zinc-900">28°</span>
+                        </div>
+                        <div class="flex-1 flex flex-col items-center gap-2 p-3 rounded-xl transition-colors duration-300 hover:bg-zinc-200/50">
+                            <span class="text-sm font-medium text-zinc-500 whitespace-nowrap">12 PM</span>
+                            <span class="text-2xl">☀️</span>
+                            <span class="text-lg font-semibold text-zinc-900">31°</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+        
+        <footer class="text-center mt-8 animate-fadeInUp [animation-delay:1s] [animation-fill-mode:backwards]">
+            <div class="flex justify-center gap-5 mb-4">
+                <a href="https://github.com/your-username" target="_blank" aria-label="GitHub Profile" class="text-zinc-500 transition-colors hover:text-zinc-900">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="https://twitter.com/your-username" target="_blank" aria-label="X Profile" class="text-zinc-500 transition-colors hover:text-zinc-900">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+                </a>
+            </div>
+            <p class="text-sm text-zinc-500">made with <span class="text-orange-500 inline-block animate-beat">♥</span> by kpcodes30</p>
+        </footer>
     </div>
-    <script src="script.js"></script>
-  </body>
-</html>
+
+</body>
+</htm
